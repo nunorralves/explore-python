@@ -6,7 +6,7 @@ from flask import Blueprint, request
 #   This helps locate the root_path for the blueprint.
 # url_prefix (Optional[str]) – A path to prepend to all of the blueprint’s 
 #   URLs, to make them distinct from the rest of the app’s routes.
-basic_endpoints = Blueprint('api', __name__, url_prefix='/basic_api')
+basic_endpoints = Blueprint('api', __name__, url_prefix='/api')
 
 @basic_endpoints.route('/hello')
 def hello_world():

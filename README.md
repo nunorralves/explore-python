@@ -48,10 +48,40 @@ export FLASK_ENV=development
 flask run
 ```
 
-Extend for Swagger support
+## Extend for Swagger support
 
 ```bash
 echo "flask-restplus" > requirements.txt
 echo "Werkzeug==0.16.1" > requirements.txt
 pip install -r requirements.txt
+```
+
+## Replace PIP by Poetry
+
+- Install `poetry` using curl
+
+```
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+```
+
+- Start using it on an existing project
+
+```bash
+poetry init
+```
+
+Following interactive prompts, we get a new ```pyproject.toml``` file
+
+- Set environment
+
+```
+export FLASK_APP=main.py
+export FLASK_ENV=development
+```
+
+- Run with poetry (built-in virtual environment)
+
+```bash
+poetry install
+poetry run flask run
 ```
