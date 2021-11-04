@@ -9,7 +9,7 @@ Python explore, will cover following topics:
 - Flask
   - Blueprints
   - Jinja templates
-  - RestPlus - Swagger (todo)
+  - RestPlus - Swagger
 - Poetry (todo)
 
 <br/>
