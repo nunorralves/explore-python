@@ -52,5 +52,6 @@ Extend for Swagger support
 
 ```bash
 echo "flask-restplus" > requirements.txt
+echo "Werkzeug==0.16.1" > requirements.txt
 pip install -r requirements.txt
 ```
