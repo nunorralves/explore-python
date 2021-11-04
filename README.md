@@ -9,13 +9,13 @@ Python explore, will cover following topics:
 - Flask
   - Blueprints
   - Jinja templates
-- Swagger (todo)
+  - RestPlus - Swagger (todo)
 - Poetry (todo)
 
 <br/>
 
 ## Steps to configure
-With python installed, lets setup virtual environment and activate it:
+With Python installed, lets setup virtual environment and activate it:
 
 ```
 sudo apt install python3.9-venv
@@ -46,4 +46,11 @@ Create main.py file
 export FLASK_APP=main.py
 export FLASK_ENV=development
 flask run
+```
+
+Extend for Swagger support
+
+```bash
+echo "flask-restplus" > requirements.txt
+pip install -r requirements.txt
 ```
